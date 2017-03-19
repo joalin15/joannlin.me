@@ -1,0 +1,62 @@
+/*   ALL   */
+html, body {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+body {
+	background: url("http://i.imgur.com/RjoHlqP.jpg");
+	background-size: 400%;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: white;
+}
+
+.fp-positioning, .fp-content {
+	position: relative;
+	width: 100%;
+	display: block
+}
+
+.fp-positioning {
+	height: 34%;
+}
+
+.fp-content {
+	height: 30%;
+	text-align: center;
+}
+
+/* CONTENT */
+
+.fp-heading {
+	position: relative;
+	width: 100%;
+	font-family: 'Teko', sans-serif;
+	font-weight: bold;
+	font-size: 100px;
+	margin: 0 auto;
+}
+
+.fp-ul{
+	transform: translateY(-30px);
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 7px;
+	text-decoration: none;
+	font-family:'PT Sans Caption', sans-serif;
+	font-size: 18px;
+}
+
+.fp-li {
+	margin: 0 auto;
+	display: inline;
+	padding: 0px 2px 0px 2px;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
