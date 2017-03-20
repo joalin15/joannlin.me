@@ -2,61 +2,154 @@
 html, body {
 	height: 100%;
 	width: 100%;
-	position: absolute;
+	display: block;
+	margin: 0;
+	background: white;
 }
 
-body {
-	background: url("http://i.imgur.com/RjoHlqP.jpg");
-	background-size: 400%;
-	background-position: center;
-	background-repeat: no-repeat;
-	color: white;
-}
-
-.fp-positioning, .fp-content {
+#content {
 	position: relative;
+}
+
+section {
 	width: 100%;
-	display: block
-}
-
-.fp-positioning {
-	height: 34%;
-}
-
-.fp-content {
-	height: 30%;
+	clear: both;
+	display: block;
+	margin: 0;
+	padding: 0;
 	text-align: center;
 }
 
-/* CONTENT */
-
-.fp-heading {
-	position: relative;
-	width: 100%;
+.section-header {
 	font-family: 'Teko', sans-serif;
 	font-weight: bold;
-	font-size: 100px;
-	margin: 0 auto;
+	font-size: 4em;
+	margin: 0;
+	color: #48bbfc;
+	padding: 15px 0;
 }
 
-.fp-ul{
-	transform: translateY(-30px);
-	position: relative;
+.info-section {
+	margin: 0;
+	background-color: white;
+	border-top: 10px solid #cfe7fc;
+	border-bottom: 10px solid #cfe7fc;
+}
+
+.cs-div {
+	top: 50px;
+	font-size: .75em;
+	background: lightgrey;
+	border-radius: 15px;
+	height; auto;
+}
+
+.cs-header {
+	color: grey;
+}
+
+/* TRANSITION */
+.transition {
+	margin: 0;
+	height: 97px;
+	background:
+		url("http://i.imgur.com/RjoHlqP.jpg")
+		no-repeat
+		fixed
+		center
+		0px / cover
+		transparent;
+}
+
+/* NAVIGATION */
+#page-nav {
+	position: fixed;
+	background: white;
 	width: 100%;
-	margin: 0 auto;
-	padding-left: 7px;
-	text-decoration: none;
-	font-family:'PT Sans Caption', sans-serif;
-	font-size: 18px;
+	height: auto;
+	text-align: center;
+	z-index: 1;
 }
 
-.fp-li {
-	margin: 0 auto;
-	display: inline;
-	padding: 0px 2px 0px 2px;
+.nav-li {
+	width: 25%;
+	border-bottom: 5px solid #cfe7fc;
+	color:  #48bbfc;
+	font-size: 1.5em;
+	font-family: 'Pathway Gothic One', sans-serif;
 }
 
-a {
-	text-decoration: none;
+.nav-a:focus, .nav-a:hover {
+	background-color: transparent !important;
+	color: #48bbfc;
+	border: 1px solid transparent;
+	border-color: transparent !important;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+	background-color: transparent !important;
+	color: #48bbfc !important;
+	border-right: none !important;
+	border-left: none !important;
+}
+
+.nav-tabs>li.active {
+	/*border-bottom: 5px solid #48bbfc;*/
+}
+
+
+/* INTRO */
+#intro {
+	height: calc(680px - 97px);
+	padding: 250px 0;
+	background:
+		url("http://i.imgur.com/RjoHlqP.jpg")
+		no-repeat
+		fixed
+		center
+		0px / cover
+		transparent;
 	color: white;
 }
+
+#intro-text {
+	position: relative;
+	height: 200px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.intro-header {
+	color: white;
+	font-size: 7em;
+	padding: 0;
+}
+
+.intro-description{
+	margin: 0;
+	transform: translateY(-20px);
+	padding-left: 10px;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 2em;
+}
+
+/* ABOUT ME */
+
+#about-me {
+	min-height: 400px;
+}
+
+/* PROJECTS */
+
+#projects {
+	min-height: 400px;
+}
+
+/* CONNECT */
+
+#connect {
+	min-height: 300px;
+	border-bottom: none;ne;

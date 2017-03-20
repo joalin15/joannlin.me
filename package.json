@@ -1,0 +1,19 @@
+{
+  "name": "joannlin.me",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/joalin15/personal-website.git"
+  },
+  "author": "Joann Lin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joalin15/personal-website/issues"
+  },
+  "homepage": "https://github.com/joalin15/personal-website#readme"
+}
