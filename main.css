@@ -9,6 +9,7 @@ html, body {
 
 #content {
 	position: relative;
+	width: 100%;
 }
 
 section {
@@ -93,6 +94,7 @@ section {
 	color: #48bbfc !important;
 	border-right: none !important;
 	border-left: none !important;
+	border-top: none !important;
 }
 
 .nav-tabs>li.active {
