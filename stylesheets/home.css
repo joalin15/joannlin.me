@@ -1,0 +1,36 @@
+
+/* home */
+#home {
+	height: calc(680px - 97px);
+	padding-top: 270px;
+	background:
+		url("http://i.imgur.com/RjoHlqP.jpg")
+		no-repeat
+		fixed
+		center
+		0px / cover
+		transparent;
+	color: white;
+}
+
+#home-text {
+	position: relative;
+	height: 200px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.home-header {
+	color: white;
+	font-size: 7em;
+	padding: 0;
+}
+
+.home-description{
+	margin: 0;
+	transform: translateY(-20px);
+	padding-left: 10px;
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 2em;
+}

@@ -4,8 +4,13 @@
 	<head>
 		<link href='https://fonts.googleapis.com/css?family=Teko:400,600' rel='stylesheet' type='text/css'>
 		<link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
-		<link href="main.css" rel="stylesheet" type="text/css">
+		<link href="./stylesheets/main.css" rel="stylesheet" type="text/css">
+		<link href="./stylesheets/home.css" rel="stylesheet" type="text/css">
+		<link href="./stylesheets/about.css" rel="stylesheet" type="text/css">
+		<link href="./stylesheets/projects.css" rel="stylesheet" type="text/css">
+		<link href="./stylesheets/connect.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
 		<script type="text/javascript" src="./node_modules/jquery/dist/jquery.min.js"></script>
 		<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 	</head>
@@ -14,17 +19,17 @@
 				data-target="#page-nav">
 		<nav id="page-nav" role="navigation">
 			<ul class="nav nav-tabs">
-				<li class="nav-li"><a class="nav-a" href="#intro">HOME</a></li>
+				<li class="nav-li"><a class="nav-a" href="#home">HOME</a></li>
 				<li class="nav-li"><a class="nav-a" href="#about-me-landing">ABOUT ME</a></li>
 				<li class="nav-li"><a class="nav-a" href="#projects-landing">PROJECTS</a></li>
 				<li class="nav-li"><a class="nav-a" href="#connect-landing">CONNECT</a></li>
 			</ul>
 		</nav>
 		<div id="content">
-			<section id="intro">
-				<div id="intro-text">
-					<h1 class="intro-header section-header">JOANN LIN</h1>
-					<h2 class="intro-description">
+			<section id="home">
+				<div id="home-text">
+					<h1 class="home-header section-header">JOANN LIN</h1>
+					<h2 class="home-description">
 						Full-Stack Web Developer
 					</h2>
 				</div>
@@ -33,21 +38,142 @@
 			<section id="about-me" class="info-section">
 				<h1 class="section-header">ABOUT ME</h1>
 				<div class="row">
-					<div class="cs-div col-md-4 col-md-offset-4"><h1 class="cs-header section-header">UNDER CONSTRUCTION</h1></div>
+					<div class="about-topic col-md-2 col-md-offset-2">
+						WHO
+					</div>
+					<div class="text col-md-6">
+						I'm a student majoring in Computer Science and Business at USC.
+						<br/>I'm a full-stack web developer interested in software development.
+					</div>
+				</div>
+				<div class="row">
+					<div class="about-topic col-md-2 col-md-offset-2">
+						WHAT
+					</div>
+					<div class="text col-md-6">
+						I'm interested in designing and developing applications that increase
+						<br/> the enjoyment of daily life and the value of human interactions.
+					</div>
+				</div>
+				<div class="row">
+					<div class="about-topic col-md-2 col-md-offset-2">
+						WHERE
+					</div>
+					<div class="text col-md-6">
+						I'm currently based in Los Angeles for school and work.
+						<br/> But I'm originally from the great suburbs of Chicago!
+					</div>
+				</div>
+				<div class="row">
+					<div class="about-topic col-md-2 col-md-offset-2">
+						WHEN
+					</div>
+					<div class="text col-md-6">
+						I started coding in the Spring of 2016 out of curiousity and, frankly, boredom.
+						<br/>Within a month, I was hooked and set on pursuing a career in programming.
+					</div>
+				</div>
+				<div class="row">
+					<div class="about-topic col-md-2 col-md-offset-2">
+						WHY
+					</div>
+					<div class="text col-md-6">
+						I like coding because it is creative and powerful.  It empowers me to grasp
+						<br/>onto my ideas and transform them into something concrete and useful.
+					</div>
+				</div>
+				<div class="row">
+					<div class="about-topic col-md-2 col-md-offset-2">
+						HOW
+					</div>
+					<div class="text col-md-6">
+						I figure there's no better way to learn programming and app development
+						than to try building an app myself. So, I'm in the process of building three.
+					</div>
 				</div>
 			</section>
 			<div id="projects-landing" class="transition"></div>
 			<section id="projects" class="info-section">
 				<h1 class="section-header">PROJECTS</h1>
 				<div class="row">
-					<div class="cs-div col-md-4 col-md-offset-4"><h1 class="cs-header section-header">UNDER CONSTRUCTION</h1></div>
+					<div class="col-md-8 col-md-offset-2">
+						<h2 class="under-construction">UNDER CONSTRUCTION</h2>
+					</div>
+				</div>
+				<div class="row text-header-div">
+					<div class="col-md-8 col-md-offset-2">
+						<h2 class="text-header">MAIN PROJECTS</h2>
+					</div>
+				</div>
+				<div class="row projects">
+					<div class="project-div col-md-6 col-md-offset-2">
+						<h2 class="project-header">
+							HouseMom
+						</h2>
+						<span class="project-description">
+							An app that adds organization and structure to roommate living and conflict resolution.
+						</span>
+					</div>
+					<div class="pic col-md-2">
+					</div>
+				</div>
+				<div class="row projects">
+					<div class="pic col-md-2 col-md-offset-2">
+					</div>
+					<div class="project-div col-md-6">
+						<h2 class="project-header">
+							Let's Eat!
+						</h2>
+						<span class="project-description">
+							An app to make eating at the dining halls a more engaging, interactive, and social experience.
+						</span>
+					</div>
+				</div>
+				<div class="row projects">
+					<div class="project-div col-md-6 col-md-offset-2">
+						<h2 class="project-header">SpotShare</h2>
+						<span class="project-description">
+							An app that allows users to mark their favorite spots on a map and see those of their friends.
+						</span>
+					</div>
+					<div class="pic col-md-2">
+					</div>
+				</div>
+				<div class="row text-header-div">
+					<div class="col-md-8 col-md-offset-2">
+						<h2 class="text-header">SMALLER PROJECTS</h2>
+					</div>
+				</div>
+				<div class="row projects">
+					<div class="project-div col-md-4 col-md-offset-2">
+						<h2 class="project-header">Scrabble</h2>
+						<span class="project-description">
+							A Scrabble game with challengeable computer players.
+						</span>
+					</div>
+					<div class="project-div col-md-4">
+						<h2 class="project-header">Cinemate</h2>
+						<span class="project-description">
+							A social media site for movie lovers.
+						</span>
+					</div>
 				</div>
 			</section>
 			<div id="connect-landing" class="transition"></div>
 			<section id="connect" class="info-section">
 				<h1 class="section-header">CONNECT</h1>
-				<div class="row">
-					<div class="cs-div col-md-4 col-md-offset-4"><h1 class="cs-header section-header">UNDER CONSTRUCTION</h1></div>
+				<div class="row connect-icons-row">
+					<div class="cs-div col-md-6 col-md-offset-3 connect-icons">
+						<a class="connect-link" href="mailto:joannlin@usc.edu">
+							<i class="fa fa-envelope-square connect-icon" aria-hidden="true"></i>
+						</a>
+						<a class="connect-link" href="https://github.com/joalin15/">
+							<i class="fa fa-linkedin-square connect-icon" aria-hidden="true"></i>
+						</a>
+						<a class="connect-link" href="https://www.linkedin.com/in/joann-lin-1a87b3116/">
+							<i class="fa fa-github-square connect-icon" aria-hidden="true"></i>
+						</a>
+					</div>
 				</div>
 			</section>
 		</div>

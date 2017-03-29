@@ -30,20 +30,21 @@ section {
 	padding: 15px 0;
 }
 
+.text-header {
+	font-family: 'Teko', sans-serif;
+	font-weight: bold;
+	font-size: 2.4em;
+	margin: 0;
+	color: #666;
+}
+
 .info-section {
 	margin: 0;
 	background-color: white;
-	border-top: 10px solid #cfe7fc;
-	border-bottom: 10px solid #cfe7fc;
+	border-top: 10px solid #cdecfe;
+	border-bottom: 10px solid #cdecfe;
 }
 
-.cs-div {
-	top: 50px;
-	font-size: .75em;
-	background: lightgrey;
-	border-radius: 15px;
-	height; auto;
-}
 
 .cs-header {
 	color: grey;
@@ -74,7 +75,7 @@ section {
 
 .nav-li {
 	width: 25%;
-	border-bottom: 5px solid #cfe7fc;
+	border-bottom: 5px solid #cdecfe;
 	color:  #48bbfc;
 	font-size: 1.5em;
 	font-family: 'Pathway Gothic One', sans-serif;
@@ -99,59 +100,5 @@ section {
 
 .nav-tabs>li.active {
 	/*border-bottom: 5px solid #48bbfc;*/
+	height: 57px;
 }
-
-
-/* INTRO */
-#intro {
-	height: calc(680px - 97px);
-	padding: 250px 0;
-	background:
-		url("http://i.imgur.com/RjoHlqP.jpg")
-		no-repeat
-		fixed
-		center
-		0px / cover
-		transparent;
-	color: white;
-}
-
-#intro-text {
-	position: relative;
-	height: 200px;
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.intro-header {
-	color: white;
-	font-size: 7em;
-	padding: 0;
-}
-
-.intro-description{
-	margin: 0;
-	transform: translateY(-20px);
-	padding-left: 10px;
-	font-family: 'Pathway Gothic One', sans-serif;
-	font-size: 2em;
-}
-
-/* ABOUT ME */
-
-#about-me {
-	min-height: 400px;
-}
-
-/* PROJECTS */
-
-#projects {
-	min-height: 400px;
-}
-
-/* CONNECT */
-
-#connect {
-	min-height: 300px;
-	border-bottom: none;ne;
