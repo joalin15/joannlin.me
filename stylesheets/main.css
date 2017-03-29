@@ -102,3 +102,14 @@ section {
 	/*border-bottom: 5px solid #48bbfc;*/
 	height: 57px;
 }
+
+
+.under-construction {
+	font-family: 'Teko', sans-serif;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+	padding: 10px 0;
+	margin: 0;
+	color: white;
+}
