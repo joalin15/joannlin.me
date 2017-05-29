@@ -13,7 +13,7 @@
 }
 
 .about-section-pic-container {
-  height: 70%;
+  height: 60%;
 }
 
 .about-section-pic {
@@ -23,7 +23,7 @@
 }
 
 .about-section-caption {
-  height: 30%;
+  height: 40%;
   color: #777;
   font-family: 'Teko', sans-serif;
   font-size: 1.65em;
@@ -40,51 +40,65 @@ svg {
 <h1 class="section-header">ABOUT ME</h1>
 <div class="temp">
   <div class="about-section">
-      <div class="about-section-pic-container">
+      <div class="about-section-pic-container" data-toggle="tooltip" data-placement="top" title="Designed by Zlatko Najdenovski from FlatIcon">
         <img class="about-section-pic" src="./img/education.svg"/>
       </div>
       <div class="about-section-caption">
-        I'm studying Computer Science Business Administration at the University of Southern California.
+        I'm studying Computer Science & Business at the University of Southern California.
       </div>
   </div>
   <div class="about-section">
-      <div class="about-section-pic-container">
+      <div class="about-section-pic-container" data-toggle="tooltip" data-placement="bottom" title="Designed by Freepik from FlatIcon">
         <img class="about-section-pic" src="./img/social.svg"/>
       </div>
       <div class="about-section-caption">
-        I'm interested in how tech can be used to increase the frequency and value of human interactions.
+        I'm interested in how tech is used to increase the value of human interactions and the quality of everyday life.
       </div>
   </div>
   <div class="about-section">
-      <div class="about-section-pic-container">
+      <div class="about-section-pic-container" data-toggle="tooltip" data-placement="bottom" title="Designed by Becris from FlatIcon">
         <img class="about-section-pic" src="./img/platforms.svg"/>
       </div>
-      <div class="about-section-caption">
-        I love using apps and building them too. I have experience in both web and mobile app development.
+      <div class="about-section-caption resize">
+        I love using and building apps. <br/>I have experience in web and mobile app development.
       </div>
   </div>
   <script>
-    $('img[src$=".svg"]').each(function() {
-        var $img = jQuery(this);
-        var imgURL = $img.attr('src');
-        var attributes = $img.prop("attributes");
+  $(document).ready(function() {
+    findSVG()
+    enableToolTips()
+   });
 
-        $.get(imgURL, function(data) {
-            // Get the SVG tag, ignore the rest
-            var $svg = jQuery(data).find('svg');
+   function findSVG() {
+     $('img[src$=".svg"]').each(function() {
+         var $img = jQuery(this);
+         var imgURL = $img.attr('src');
+         var attributes = $img.prop("attributes");
 
-            // Remove any invalid XML tags
-            $svg = $svg.removeAttr('xmlns:a');
+         $.get(imgURL, function(data) {
+             // Get the SVG tag, ignore the rest
+             var $svg = jQuery(data).find('svg');
 
-            // Loop through IMG attributes and apply on SVG
-            $.each(attributes, function() {
-               console.log("found svg")
-                $svg.attr(this.name, this.value);
-            });
+             // Remove any invalid XML tags
+             $svg = $svg.removeAttr('xmlns:a');
 
-            // Replace IMG with SVG
-            $img.replaceWith($svg);
-        }, 'xml');
+             // Loop through IMG attributes and apply on SVG
+             $.each(attributes, function() {
+                 $svg.attr(this.name, this.value);
+             });
+
+             // Replace IMG with SVG
+             $img.replaceWith($svg);
+         }, 'xml');
+     });
+   }
+
+   function enableToolTips() {
+     $(function () {
+       console.log("enableToolTips called")
+      $('[data-toggle="tooltip"]').tooltip()
     });
+   }
+
   </script>
 </div>
