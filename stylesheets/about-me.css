@@ -1,7 +1,6 @@
 /* ABOUT ME */
 
 #about-me {
-	min-height: 400px;
 	padding-bottom: 10px;
 }
 
@@ -48,5 +47,5 @@
 }
 
 svg {
-  fill: #666;
+  fill: #555;
 }

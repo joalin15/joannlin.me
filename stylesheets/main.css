@@ -48,6 +48,11 @@ section {
 	border-bottom: 10px solid #cdecfe;
 	overflow: auto
 }
+
+.info-section-footer {
+	height: 10px;
+}
+
 .cs-header {
 	color: grey;
 }
