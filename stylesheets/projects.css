@@ -26,7 +26,7 @@
 }
 
 .text-header-div {
-	margin-bottom: 0 !important;
+	margin-bottom: 5px !important;
 }
 
 
@@ -41,4 +41,5 @@
 
 .projects {
 	height: 100px !important;
+	margin-bottom: 15px;
 }
