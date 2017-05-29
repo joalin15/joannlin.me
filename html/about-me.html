@@ -1,60 +1,11 @@
-<style>
-.temp {
-  width: 100%;
-  height: calc(400px - 4em - 100px);
-  text-align: center;
-}
-.about-section {
-  height: 100%;
-  width: 28%;
-  margin: 0 .75%;
-  display: inline-block;
-  vertical-align: top;
-}
-
-.about-section-pic-container {
-  height: 60%;
-}
-
-.about-section-pic-credit {
-  position: relative;
-  height: 10%;
-  font-family: 'Teko', sans-serif;
-  font-size: 12px;
-  text-align: right;
-  width: 70%;
-  margin: 0 auto;
-  color: #999;
-}
-
-.about-section-pic {
-  position: relative;
-  height: 80%;
-}
-
-.about-section-caption {
-  height: 40%;
-  color: #777;
-  font-family: 'Teko', sans-serif;
-  font-size: 1.65em;
-  font-weight: lighter;
-  padding: 0 10%;
-}
-
-svg {
-  fill: #666;
-}
-
-</style>
-
 <h1 class="section-header">ABOUT ME</h1>
-<div class="temp">
+<div class="about-section-container">
   <div class="about-section">
       <div class="about-section-pic-container">
         <img class="about-section-pic" src="./img/education.svg"/>
       </div>
       <div class="about-section-caption">
-        I'm studying Computer Science & Business at the University of Southern California.
+        I'm studying Computer Science & Business Administration at the University of Southern California.
       </div>
   </div>
   <div class="about-section">
@@ -73,34 +24,5 @@ svg {
         I love using and building apps. <br/>I have experience in web and mobile app development.
       </div>
   </div>
-  <script>
-  $(document).ready(function() {
-    findSVG()
-   });
-
-   function findSVG() {
-     $('img[src$=".svg"]').each(function() {
-         var $img = jQuery(this);
-         var imgURL = $img.attr('src');
-         var attributes = $img.prop("attributes");
-
-         $.get(imgURL, function(data) {
-             // Get the SVG tag, ignore the rest
-             var $svg = jQuery(data).find('svg');
-
-             // Remove any invalid XML tags
-             $svg = $svg.removeAttr('xmlns:a');
-
-             // Loop through IMG attributes and apply on SVG
-             $.each(attributes, function() {
-                 $svg.attr(this.name, this.value);
-             });
-
-             // Replace IMG with SVG
-             $img.replaceWith($svg);
-         }, 'xml');
-     });
-   }
-
-  </script>
 </div>
+<script src="../js/about.js"></script>

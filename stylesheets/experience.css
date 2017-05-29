@@ -1,0 +1,57 @@
+
+/*
+ * EXPERIENCE.HTML
+ */
+
+#experience {
+	min-height: 515px;
+	font-family: 'Teko', sans-serif;
+}
+
+.experiences {
+	height: 175px !important;
+	margin-bottom: 15px;
+}
+
+.experience-div {
+	height: 100%;
+	border-radius: 10px;
+	border: 1px solid skyblue;
+}
+
+.experience-logo {
+  display: inline;
+  position: relative;
+  height: 100%;
+  text-align: right;
+}
+
+.experience-logo > a {
+  position: relative;
+  height: 100%;
+}
+
+.experience-logo > a > img {
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid skyblue;
+  height: 100%;
+}
+
+.experience-header {
+	font-size: 1.75em;
+	color: skyblue;
+	margin: 0;
+	margin-top: 5px;
+}
+
+.experience-title {
+  color: #555;
+  font-size: 1.25em;
+  display: block;
+}
+
+.experience-description{
+	color: #777;
+	font-size: 1.25em;
+}
