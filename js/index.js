@@ -30,14 +30,14 @@ $('a[href*="#"]').click(function(event) {
 
 // HTML Includes
 $(function() {
-  $("#home").load("home.html");
+  $("#home").load("../html/home.html");
 });
 $(function() {
-  $("#about-me").load("about-me.html");
+  $("#about-me").load("../html/about-me.html");
 });
 $(function() {
-  $("#projects").load("projects.html");
+  $("#projects").load("../html/projects.html");
 });
 $(function() {
-  $("#connect").load("connect.html");
+  $("#connect").load("../html/connect.html");
 });
