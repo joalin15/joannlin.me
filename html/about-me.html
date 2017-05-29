@@ -1,6 +1,90 @@
+<style>
+.temp {
+  width: 100%;
+  height: calc(400px - 4em - 100px);
+  text-align: center;
+}
+.about-section {
+  height: 100%;
+  width: 28%;
+  margin: 0 .75%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.about-section-pic-container {
+  height: 70%;
+}
+
+.about-section-pic {
+  position: relative;
+  top: 10%;
+  height: 80%;
+}
+
+.about-section-caption {
+  height: 30%;
+  color: #777;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.65em;
+  font-weight: lighter;
+  padding: 0 10%;
+}
+
+svg {
+  fill: #666;
+}
+
+</style>
+
 <h1 class="section-header">ABOUT ME</h1>
-<div class="row">
-  <div class="col-md-8 col-md-offset-2">
-    <h2 class="under-construction">UNDER CONSTRUCTION</h2>
+<div class="temp">
+  <div class="about-section">
+      <div class="about-section-pic-container">
+        <img class="about-section-pic" src="./img/education.svg"/>
+      </div>
+      <div class="about-section-caption">
+        I'm studying Computer Science Business Administration at the University of Southern California.
+      </div>
   </div>
+  <div class="about-section">
+      <div class="about-section-pic-container">
+        <img class="about-section-pic" src="./img/social.svg"/>
+      </div>
+      <div class="about-section-caption">
+        I'm interested in how tech can be used to increase the frequency and value of human interactions.
+      </div>
+  </div>
+  <div class="about-section">
+      <div class="about-section-pic-container">
+        <img class="about-section-pic" src="./img/platforms.svg"/>
+      </div>
+      <div class="about-section-caption">
+        I love using apps and building them too. I have experience in both web and mobile app development.
+      </div>
+  </div>
+  <script>
+    $('img[src$=".svg"]').each(function() {
+        var $img = jQuery(this);
+        var imgURL = $img.attr('src');
+        var attributes = $img.prop("attributes");
+
+        $.get(imgURL, function(data) {
+            // Get the SVG tag, ignore the rest
+            var $svg = jQuery(data).find('svg');
+
+            // Remove any invalid XML tags
+            $svg = $svg.removeAttr('xmlns:a');
+
+            // Loop through IMG attributes and apply on SVG
+            $.each(attributes, function() {
+               console.log("found svg")
+                $svg.attr(this.name, this.value);
+            });
+
+            // Replace IMG with SVG
+            $img.replaceWith($svg);
+        }, 'xml');
+    });
+  </script>
 </div>

@@ -43,8 +43,13 @@ section {
 	background-color: white;
 	border-top: 10px solid #cdecfe;
 	border-bottom: 10px solid #cdecfe;
+	overflow: auto
 }
 
+.info-section-footer {
+	height: 15px;
+	background-color: orange;
+}
 
 .cs-header {
 	color: grey;
@@ -74,7 +79,7 @@ section {
 }
 
 .nav-li {
-	width: 25%;
+	width: 20%;
 	border-bottom: 5px solid #cdecfe;
 	color:  #48bbfc;
 	font-size: 1.5em;
