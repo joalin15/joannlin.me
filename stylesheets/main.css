@@ -1,4 +1,6 @@
-/*   ALL   */
+/*
+ * ALL
+ */
 html, body {
 	height: 100%;
 	width: 100%;
@@ -19,6 +21,7 @@ section {
 	margin: 0;
 	padding: 0;
 	text-align: center;
+	outline: none;
 }
 
 .section-header {
@@ -48,17 +51,18 @@ section {
 
 .info-section-footer {
 	height: 15px;
-	background-color: orange;
 }
 
 .cs-header {
 	color: grey;
 }
 
-/* TRANSITION */
-.transition {
+/*
+ * TRANSITION/LANDING
+ */
+ .transition {
 	margin: 0;
-	height: 97px;
+	height: 98px;
 	background:
 		url("http://i.imgur.com/RjoHlqP.jpg")
 		no-repeat
@@ -68,7 +72,9 @@ section {
 		transparent;
 }
 
-/* NAVIGATION */
+/*
+ * NAVIGATION BAR
+ */
 #page-nav {
 	position: fixed;
 	background: white;
@@ -108,7 +114,9 @@ section {
 	height: 57px;
 }
 
-
+/*
+ * UNDER CONSTRUCTIN PLACEHOLDER
+ */
 .under-construction {
 	font-family: 'Teko', sans-serif;
 	text-align: center;
