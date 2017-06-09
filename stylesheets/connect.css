@@ -6,9 +6,8 @@
 }
 
 .connect-icons-row {
-	padding-top: 2%;
-  height: calc(61px + 2%);
-  margin-bottom: 0;
+	padding: 1%;
+  transform: translateY(-10px);
 }
 
 .connect-icons {
@@ -20,7 +19,7 @@
 }
 
 .connect-icon {
-	color: #666;
+	color: #888;
 	font-size: 3.5em !important;
 	padding: 0 2.5%;
 }

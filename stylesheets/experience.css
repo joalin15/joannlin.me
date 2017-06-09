@@ -7,50 +7,37 @@
 	font-family: 'Teko', sans-serif;
 }
 
-.experiences {
-	height: 175px !important;
-	margin-bottom: 15px;
-}
-
-.experience-div {
-	height: 100%;
-	border-radius: 10px;
-	border: 1px solid skyblue;
-}
-
-.experience-logo {
-  display: inline;
-  position: relative;
+.experience-section {
   height: 100%;
-  text-align: right;
+  display: inline-block;
+  vertical-align: top;
 }
 
-.experience-logo > a {
-  position: relative;
-  height: 100%;
+.experience-section-pic-container {
+  height: 20%;
 }
 
-.experience-logo > a > img {
-  position: relative;
-  border-radius: 10px;
-  border: 1px solid skyblue;
-  height: 100%;
+.experience-section-pic {
+  height: 120px;
+  border-radius: 50%;
+  border-width: 4px;
+  border-color: lightgray;
+  border-style: outset;
 }
 
-.experience-header {
-	font-size: 1.75em;
-	color: skyblue;
-	margin: 0;
-	margin-top: 5px;
+.experience-section-title {
+  height: 25%;
+  font-size: calc(16px + 1.5vw + 1vh);
+  color: #48bbfc;
 }
 
-.experience-title {
-  color: #555;
-  font-size: 1.25em;
-  display: block;
-}
-
-.experience-description{
-	color: #777;
-	font-size: 1.25em;
+.experience-section-caption {
+  height: 55%;
+  color: #888;
+  font-size: calc(12px + 1vw + 0.5vh);
+  font-weight: lighter;
+  padding: 0 10%;
+  transform: translatey(-10px);
+  line-height: calc(12px + 1.20vw + .70vh);
+  white-space: nowrap;
 }
