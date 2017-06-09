@@ -38,15 +38,19 @@
 }
 
 .project-section-title {
-  height: 25%;
-  font-size: 2.3em;
+  font-family: 'Khand', sans-serif;
+  font-size: calc(20px + 0.5vw + 0.25vh);
+  font-weight: bold;
   color: #48bbfc;
+
+  height: 25%;
 }
 
 .project-section-caption {
+  font-family: 'Khand', sans-serif;
   height: 55%;
   color: #777;
-  font-size: 1.62em;
+  font-size: calc(18px + 0.3vw + 0.2vh);
   font-weight: lighter;
-  padding: 0 10%;
+  padding: 0 5%;
 }

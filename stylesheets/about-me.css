@@ -5,25 +5,13 @@
 
 .about-section {
   height: 100%;
-  width: 28%;
-  margin: 0 .75%;
+  width: 31%;
   display: inline-block;
   vertical-align: top;
 }
 
 .about-section-pic-container {
   height: 60%;
-}
-
-.about-section-pic-credit {
-  position: relative;
-  height: 10%;
-  font-family: 'Teko', sans-serif;
-  font-size: 12px;
-  text-align: right;
-  width: 70%;
-  margin: 0 auto;
-  color: #999;
 }
 
 .about-section-pic {
@@ -34,10 +22,10 @@
 .about-section-caption {
   height: 40%;
   color: #777;
-  font-family: 'Teko', sans-serif;
-  font-size: calc(18px + 0.4vw + .3vh);
+  font-size: calc(18px + 0.3vw + .2vh);
   font-weight: lighter;
-  padding: 1% 5%;
+  padding: 2% 5%;
+  font-family: 'Khand', sans-serif;
 }
 
 @media (max-width: 700px){
