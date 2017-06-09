@@ -36,25 +36,27 @@ section {
 	color: #48bbfc;
 	padding: 15px 0;
 }
-
+/*
 .text-header {
 	font-family: 'Teko', sans-serif;
 	font-weight: bold;
 	font-size: 2.4em;
 	margin: 0;
 	color: #666;
-}
+}*/
 
-.info-section {
+.info-section-container {
 	margin: 0;
 	background-color: white;
 	border-top: 10px solid #cdecfe;
 	border-bottom: 10px solid #cdecfe;
-	overflow: auto
+	overflow: auto;
+	padding-bottom: 15px;
 }
 
-.info-section-footer {
-	height: 10px;
+.info-section {
+	  width: 100%;
+	  text-align: center;
 }
 
 .cs-header {
@@ -87,7 +89,7 @@ section {
  */
  .transition {
 	margin: 0;
-	height: 98px;
+	height: 75px;
 	background:
 		url("../img/background.jpg")
 		no-repeat

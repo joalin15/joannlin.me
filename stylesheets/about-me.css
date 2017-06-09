@@ -1,13 +1,8 @@
 /* ABOUT ME */
 
 #about-me {
-	padding-bottom: 10px;
 }
 
-.about-section-container {
-  width: 100%;
-  text-align: center;
-}
 .about-section {
   height: 100%;
   width: 28%;
@@ -17,7 +12,7 @@
 }
 
 .about-section-pic-container {
-  height: 60s%;
+  height: 60%;
 }
 
 .about-section-pic-credit {
@@ -33,10 +28,6 @@
 
 .about-section-pic {
   position: relative;
-  height: 80%;
-}
-
-.about-section-pic-container > svg {
 	height: 115px;
 }
 
@@ -46,7 +37,7 @@
   font-family: 'Teko', sans-serif;
   font-size: 1.62em;
   font-weight: lighter;
-  padding: 0 10%;
+  padding: 1% 10%;
 }
 
 @media (max-width: 800px){
