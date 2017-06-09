@@ -84,6 +84,12 @@ section {
    border-left: 3px solid skyblue;
  }
 
+ @media only screen {
+	 .section-header {
+		 font-size: calc(40px + 2vw + 1vh);
+	 }
+ }
+
 /*
  * TRANSITION/LANDING
  */
