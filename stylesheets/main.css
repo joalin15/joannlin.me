@@ -110,7 +110,7 @@ section {
 	width: 20%;
 	border-bottom: 5px solid #cdecfe;
 	color:  #48bbfc;
-	font-size: calc(12px + .65vw);
+	font-size: calc(14px + .65vw);
 	font-family: 'Pathway Gothic One', sans-serif;
 	white-space: nowrap;
 	min-height: 55px;

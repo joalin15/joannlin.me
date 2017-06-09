@@ -3,7 +3,7 @@
 #home {
 	position: relative;
 	height: calc(100vh - 98px);
-	padding: 30vh;
+	padding: 30vh 0;
 	background:
 		url("http://i.imgur.com/RjoHlqP.jpg")
 		no-repeat
