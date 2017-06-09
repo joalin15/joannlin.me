@@ -21,7 +21,7 @@
   height: 120px;
   border-radius: 50%;
   border-width: 4px;
-  border-color: lightgray;
+	border-color: rgba(0,0,0,0.4);
   border-style: outset;
 }
 
