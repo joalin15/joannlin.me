@@ -21,8 +21,12 @@
   height: 120px;
   border-radius: 50%;
   border-width: 4px;
-	border-color: rgba(0,0,0,0.4);
+	border-color: rgba(0,0,0,0.3);
   border-style: outset;
+}
+
+.experience-section-pic:hover {
+	border-color: rgba(0,0,0,0.4);
 }
 
 .experience-section-title {

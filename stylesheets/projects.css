@@ -52,6 +52,11 @@
   font-weight: lighter;
   padding: 0 5%;
 }
+
 .back {
   min-height: 120px;
+}
+
+a > svg:hover {
+  fill: rgba(0,0,0,0.8);
 }
