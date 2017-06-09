@@ -9,6 +9,10 @@ html, body {
 	background: white;
 }
 
+*:focus {
+	outline: none !important;
+}
+
 #content {
 	position: relative;
 	width: 100%;
@@ -85,7 +89,7 @@ section {
 	margin: 0;
 	height: 98px;
 	background:
-		url("http://i.imgur.com/RjoHlqP.jpg")
+		url("../img/background.jpg")
 		no-repeat
 		fixed
 		center
@@ -110,7 +114,7 @@ section {
 	width: 20%;
 	border-bottom: 5px solid #cdecfe;
 	color:  #48bbfc;
-	font-size: calc(14px + .65vw);
+	font-size: calc(14px + .5vw + .5vh);
 	font-family: 'Pathway Gothic One', sans-serif;
 	white-space: nowrap;
 	min-height: 55px;

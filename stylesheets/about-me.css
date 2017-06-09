@@ -6,7 +6,6 @@
 
 .about-section-container {
   width: 100%;
-  height: calc(400px - 4em - 100px);
   text-align: center;
 }
 .about-section {
@@ -18,7 +17,7 @@
 }
 
 .about-section-pic-container {
-  height: 60%;
+  height: 60s%;
 }
 
 .about-section-pic-credit {
@@ -37,6 +36,10 @@
   height: 80%;
 }
 
+.about-section-pic-container > svg {
+	height: 115px;
+}
+
 .about-section-caption {
   height: 40%;
   color: #777;
@@ -45,6 +48,18 @@
   font-weight: lighter;
   padding: 0 10%;
 }
+
+@media (max-width: 800px){
+	.about-section {
+	    width: 100%;
+			margin: 2% 0;
+		}
+
+	.about-section-caption {
+		padding: 0 20%;
+	}
+}
+
 
 svg {
   fill: #555;

@@ -5,7 +5,7 @@
 	height: calc(100vh - 98px);
 	padding: 30vh 0;
 	background:
-		url("http://i.imgur.com/RjoHlqP.jpg")
+		url("../img/background.jpg")
 		no-repeat
 		fixed
 		center
@@ -24,19 +24,19 @@
 
 .home-header {
 	color: white;
-	font-size: calc(20px + 8vw);
+	font-size: calc(20px + 6vw + 4vh);
 	padding: 10px;
 	white-space: nowrap;
 }
 
 .home-description{
 	margin: 0;
-	transform: translateY(-20px);
+	transform: translateY(-25px);
 	padding-left: 10px;
 	font-family: 'Pathway Gothic One', sans-serif;
 	/*font-size: 1.8em;*/
 	white-space: nowrap;
-	font-size: calc(14px + 1vw);
+	font-size: calc(14px + 1vw + 1vh);
 }
 
 #home-landing {
