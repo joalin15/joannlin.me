@@ -103,14 +103,17 @@ section {
 	height: auto;
 	text-align: center;
 	z-index: 1;
+	min-height: 55px;
 }
 
 .nav-li {
 	width: 20%;
 	border-bottom: 5px solid #cdecfe;
 	color:  #48bbfc;
-	font-size: 1.5em;
+	font-size: calc(12px + .65vw);
 	font-family: 'Pathway Gothic One', sans-serif;
+	white-space: nowrap;
+	min-height: 55px;
 }
 
 .nav-a:focus, .nav-a:hover {
@@ -131,8 +134,7 @@ section {
 }
 
 .nav-tabs>li.active {
-	/*border-bottom: 5px solid #48bbfc;*/
-	height: 57px;
+	margin-top: 1px;
 }
 
 /*
