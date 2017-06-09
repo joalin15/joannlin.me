@@ -44,6 +44,22 @@
 	}
 }
 
+@media only screen {
+  .about-section {
+	    width: 100%;
+			margin: 2% 0;
+		}
+
+  .about-section-pic {
+    position: relative;
+  	height: 100px;
+  }
+
+	.about-section-caption {
+		padding: 1% 25%;
+	}
+}
+
 
 svg {
   fill: rgba(0,0,0,0.5);

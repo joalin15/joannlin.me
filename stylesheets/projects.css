@@ -60,3 +60,14 @@
 a > svg:hover {
   fill: rgba(0,0,0,0.8);
 }
+
+@media only screen {
+  .project-section {
+	    width: 100%;
+			margin: 2% 0;
+      padding: 0;
+		}
+  .project-section-caption {
+    padding: 1% 25%;
+  }
+}
