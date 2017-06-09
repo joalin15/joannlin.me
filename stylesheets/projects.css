@@ -6,16 +6,17 @@
   height: 100%;
   display: inline-block;
   vertical-align: top;
-  padding: 25px 0;
+  padding: 10px 0;
 }
 
 .main {
   width: 40%;
+  margin: 25px .75%;
 }
 
 .smaller {
   width: 28%;
-  margin: 0 .75%;
+  margin: 25px .75%;
 }
 
 .project-section-header {
@@ -30,7 +31,6 @@
 }
 
 .project-section-pic-container {
-  height: 20%;
 }
 
 .project-section-pic {
@@ -43,14 +43,15 @@
   font-weight: bold;
   color: #48bbfc;
 
-  height: 25%;
 }
 
 .project-section-caption {
   font-family: 'Khand', sans-serif;
-  height: 55%;
   color: #777;
   font-size: calc(18px + 0.3vw + 0.2vh);
   font-weight: lighter;
   padding: 0 5%;
+}
+.back {
+  min-height: 120px;
 }
