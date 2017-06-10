@@ -46,7 +46,7 @@
 		  and (-webkit-min-device-pixel-ratio: 2) {
 				#home {
 					height: calc(100vh - 75px);
-					padding: 31vh 0;
+					padding: 35% 0;
 				}
 
 	 			.home-header {
