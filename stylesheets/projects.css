@@ -91,7 +91,6 @@ a > svg:hover {
       		}
 
         .project-section-pic {
-          position: relative;
           height: 80px;
         }
 
@@ -121,12 +120,12 @@ a > svg:hover {
 		  and (-webkit-min-device-pixel-ratio: 2)
 		  and (orientation: landscape) {
         .project-section {
-      			margin: 1% 0;
-      		}
+          margin: 1% 0%;
+        }
 
-      	.project-section-caption {
-      		padding: .5% 8%;
-      	}
+        .project-section-caption {
+          padding: 0% 8%;
+        }
 		}
 
 /* ----------- iPhone 6 ----------- */
@@ -145,3 +144,67 @@ a > svg:hover {
       and (orientation: portrait) {
 
     }
+
+    /* Landscape */
+      @media only screen
+        and (min-device-width: 375px)
+        and (max-device-width: 667px)
+        and (-webkit-min-device-pixel-ratio: 2)
+        and (orientation: landscape) {
+
+      }
+
+  /* ----------- iPhone 6+ ----------- */
+
+    /* Portrait and Landscape */
+      @media only screen
+        and (min-device-width: 414px)
+        and (max-device-width: 736px)
+        and (-webkit-min-device-pixel-ratio: 3) {
+          .project-section {
+        	    width: 100%;
+        			margin: 3% 0;
+        		}
+
+          .project-section-header {
+            font-size: calc(24px + 0.5vw + 1.5vh);
+          }
+
+          .project-section-pic {
+            height: 110px;
+          }
+
+          .project-section-title {
+            font-size: calc(20px + 0.5vw + 1.3vh);
+          }
+
+        	.project-section-caption {
+        		padding: 1% 8%;
+            font-size: calc(18px + 0.5vw + .7vh);
+            line-height: calc(24px + 0.5vw + .7vh);
+        	}
+      }
+
+    /* Portrait */
+      @media only screen
+        and (min-device-width: 414px)
+        and (max-device-width: 736px)
+        and (-webkit-min-device-pixel-ratio: 3)
+        and (orientation: portrait) {
+
+      }
+
+    /* Landscape */
+      @media only screen
+        and (min-device-width: 414px)
+        and (max-device-width: 736px)
+        and (-webkit-min-device-pixel-ratio: 3)
+        and (orientation: landscape) {
+          .project-section {
+            margin: 1% 0%;
+          }
+
+          .project-section-caption {
+        		padding: 0% 8%;
+        	}
+      }

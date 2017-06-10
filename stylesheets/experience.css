@@ -61,8 +61,7 @@
       		}
 
         .experience-section-pic {
-          position: relative;
-          height: 80px;
+          height: 105px;
         }
 
         .experience-section-title {
@@ -70,7 +69,7 @@
         }
 
       	.experience-section-caption {
-      		padding: 1% 8%;
+      		padding: 0% 8%;
           font-size: calc(18px + 0.3vw + .4vh);
           line-height: calc(24px + 0.3vw + .4vh);
       	}
@@ -91,13 +90,13 @@
 		  and (-webkit-min-device-pixel-ratio: 2)
 		  and (orientation: landscape) {
 				.experience-section {
-    	    width: 100%;
-    			margin: 1% 0;
-    		}
+					width: 40%;
+					margin: 0;
+				}
 
 				.experience-section-caption {
 					margin: 0;
-					margin-bottom: 1%;
+					margin-bottom: 2%;
 					padding: 0;
 				}
 		}
@@ -118,3 +117,66 @@
       and (orientation: portrait) {
 
     }
+
+		/* Landscape */
+	    @media only screen
+	      and (min-device-width: 375px)
+	      and (max-device-width: 667px)
+	      and (-webkit-min-device-pixel-ratio: 2)
+	      and (orientation: landscape) {
+
+	    }
+
+	/* ----------- iPhone 6+ ----------- */
+
+	  /* Portrait and Landscape */
+	    @media only screen
+	      and (min-device-width: 414px)
+	      and (max-device-width: 736px)
+	      and (-webkit-min-device-pixel-ratio: 3) {
+					.experience-section {
+	      	    width: 100%;
+	      			margin: 3% 0;
+	      		}
+
+	        .experience-section-pic {
+	          height: 120px;
+	        }
+
+	        .experience-section-title {
+						font-size: calc(20px + 0.3vw + 1.8vh);
+	        }
+
+	      	.experience-section-caption {
+	      		padding: 0% 8%;
+            font-size: calc(18px + 0.6vw + .7vh);
+            line-height: calc(24px + 0.6vw + .7vh);
+	      	}
+	    }
+
+	  /* Portrait */
+	    @media only screen
+	      and (min-device-width: 414px)
+	      and (max-device-width: 736px)
+	      and (-webkit-min-device-pixel-ratio: 3)
+	      and (orientation: portrait) {
+
+	    }
+
+	  /* Landscape */
+	    @media only screen
+	      and (min-device-width: 414px)
+	      and (max-device-width: 736px)
+	      and (-webkit-min-device-pixel-ratio: 3)
+	      and (orientation: landscape) {
+					.experience-section {
+						width: 40%;
+						margin: 0;
+					}
+
+					.experience-section-caption {
+						margin: 0;
+						margin-bottom: 2%;
+						padding: 0;
+					}
+	    }
