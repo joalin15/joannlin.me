@@ -61,13 +61,84 @@ a > svg:hover {
   fill: rgba(0,0,0,0.8);
 }
 
-@media only screen {
-  .project-section {
-	    width: 100%;
-			margin: 2% 0;
-      padding: 0;
+/* ----------- Web ----------- */
+
+    @media (max-width: 700px) {
+      .project-section {
+    	    width: 100%;
+    			margin: 2% 0;
+          padding: 0;
+    		}
+      .project-section-caption {
+        padding: 1% 25%;
+      }
+    }
+
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+	/* Portrait and Landscape */
+		@media only screen
+		  and (min-device-width: 320px)
+		  and (max-device-width: 568px)
+		  and (-webkit-min-device-pixel-ratio: 2) {
+        .project-section {
+      	    width: 100%;
+      			margin: 3% 0;
+      		}
+
+        .project-section-pic {
+          position: relative;
+          height: 80px;
+        }
+
+        .project-section-title {
+          font-size: calc(20px + 0.75vw + 1vh);
+        }
+
+      	.project-section-caption {
+      		padding: 1% 8%;
+          font-size: calc(18px + 0.3vw + .4vh);
+          line-height: calc(24px + 0.3vw + .4vh);
+      	}
 		}
-  .project-section-caption {
-    padding: 1% 25%;
-  }
-}
+
+	/* Portrait */
+		@media only screen
+		  and (min-device-width: 320px)
+		  and (max-device-width: 568px)
+		  and (-webkit-min-device-pixel-ratio: 2)
+		  and (orientation: portrait) {
+		}
+
+	/* Landscape */
+		@media only screen
+		  and (min-device-width: 320px)
+		  and (max-device-width: 568px)
+		  and (-webkit-min-device-pixel-ratio: 2)
+		  and (orientation: landscape) {
+        .project-section {
+      			margin: 1% 0;
+      		}
+
+      	.project-section-caption {
+      		padding: .5% 8%;
+      	}
+		}
+
+/* ----------- iPhone 6 ----------- */
+
+  /* Portrait and Landscape */
+    @media only screen and (min-device-width: 375px)
+      and (max-device-width: 667px)
+      and (-webkit-min-device-pixel-ratio: 2) {
+    }
+
+  /* Portrait */
+    @media only screen
+      and (min-device-width: 375px)
+      and (max-device-width: 667px)
+      and (-webkit-min-device-pixel-ratio: 2)
+      and (orientation: portrait) {
+
+    }

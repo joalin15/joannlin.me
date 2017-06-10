@@ -6,7 +6,13 @@ html, body {
 	width: 100%;
 	display: block;
 	margin: 0;
-	background: white;
+	background:
+		url("../img/background.jpg")
+		no-repeat
+		fixed
+		center
+		0px / cover
+		transparent;
 }
 
 *:focus {
@@ -36,14 +42,6 @@ section {
 	color: #48bbfc;
 	padding: 15px 0;
 }
-/*
-.text-header {
-	font-family: 'Teko', sans-serif;
-	font-weight: bold;
-	font-size: 2.4em;
-	margin: 0;
-	color: #666;
-}*/
 
 .info-section-container {
 	margin: 0;
@@ -59,112 +57,66 @@ section {
 	  text-align: center;
 }
 
-.cs-header {
-	color: grey;
-}
-
-/*
- * ROW STYLING
- */
- .row {
+.row {
  	height: 50px;
  	font-size: 1.25em;
    text-align: left;
    margin-bottom: 30px;
  }
 
- .row-header {
-   text-align: center;
-   margin-bottom: 0;
- }
-
- .text {
-   height: 100%;
- 	color: #777;
-   border-left: 3px solid skyblue;
- }
-
- @media only screen {
-	 .section-header {
-		 font-size: calc(40px + 2vw + 1vh);
-	 }
- }
-
-/*
- * TRANSITION/LANDING
- */
+/* TRANSITION/LANDING */
  .transition {
 	margin: 0;
 	height: 75px;
-	background:
-		url("../img/background.jpg")
-		no-repeat
-		fixed
-		center
-		0px / cover
-		transparent;
 }
 
-/*
- * NAVIGATION BAR
- */
-#page-nav {
-	position: fixed;
-	background: white;
-	width: 100%;
-	height: auto;
-	text-align: center;
-	z-index: 1;
-	min-height: 55px;
-}
+/* ----------- iPhone 5 and 5S ----------- */
 
-.nav-li {
-	width: 20%;
-	border-bottom: 5px solid #cdecfe;
-	color:  #48bbfc;
-	font-size: calc(16px + .5vw + .25vh);
-	font-family: 'Pathway Gothic One', sans-serif;
-	white-space: nowrap;
-	min-height: 55px;
-}
+	/* Portrait and Landscape */
+		@media only screen
+		  and (min-device-width: 320px)
+		  and (max-device-width: 568px)
+		  and (-webkit-min-device-pixel-ratio: 2) {
 
-.nav-a:focus, .nav-a:hover {
-	background-color: transparent !important;
-	color: #48bbfc;
-	border: 1px solid transparent;
-	border-color: transparent !important;
-}
+ 			 .section-header {
+ 				 font-size: calc(28px + 2vw + 4vh);
+ 			 }
 
-.nav-tabs>li.active>a,
-.nav-tabs>li.active>a:focus,
-.nav-tabs>li.active>a:hover {
-	background-color: transparent !important;
-	color: #48bbfc !important;
-	border-right: none !important;
-	border-left: none !important;
-	border-top: none !important;
-}
+			 .transition {
+				 /*display: none*/
+			 }
+		}
 
-.nav-tabs>li.active {
-	margin-top: 1px;
-}
+	/* Portrait */
+		@media only screen
+		  and (min-device-width: 320px)
+		  and (max-device-width: 568px)
+		  and (-webkit-min-device-pixel-ratio: 2)
+		  and (orientation: portrait) {
+		}
 
-/*
- * UNDER CONSTRUCTIN PLACEHOLDER
- */
-.under-construction {
-	font-family: 'Teko', sans-serif;
-	text-align: center;
-	background: rgba(0, 0, 0, 0.3);
-	border-radius: 15px;
-	padding: 10px 0;
-	margin: 0;
-	color: white;
-}
+	/* Landscape */
+		@media only screen
+		  and (min-device-width: 320px)
+		  and (max-device-width: 568px)
+		  and (-webkit-min-device-pixel-ratio: 2)
+		  and (orientation: landscape) {
 
-/*	NOTES
- *		header - 22px
- *		section header - 18px
- *		body text - 16px
- *
- */
+		}
+
+/* ----------- iPhone 6 ----------- */
+
+  /* Portrait and Landscape */
+    @media only screen and (min-device-width: 375px)
+      and (max-device-width: 667px)
+      and (-webkit-min-device-pixel-ratio: 2) {
+    }
+
+		/* Portrait */
+		@media only screen
+		  and (min-device-width: 375px)
+		  and (max-device-width: 667px)
+		  and (-webkit-min-device-pixel-ratio: 2)
+		  and (orientation: portrait) {
+
+		}

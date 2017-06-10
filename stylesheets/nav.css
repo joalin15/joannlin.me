@@ -1,40 +1,46 @@
 
-/* home */
-#home {
-	position: relative;
-	height: calc(100vh - 75px);
-	padding: 30vh 0;
-	color: white;
-}
-
-#home-text {
-	position: relative;
-	height: 200px;
+/*
+ * NAVIGATION BAR
+ */
+#page-nav {
+	position: fixed;
+	background: white;
 	width: 100%;
-	margin: 0 auto;
+	height: auto;
 	text-align: center;
+	z-index: 1;
+	min-height: 55px;
 }
 
-.home-header {
-	color: white;
-	font-size: calc(40px + 4vw + 3vh);
-	padding: 10px;
-	white-space: nowrap;
-}
-
-.home-description{
-	margin: 0;
-	transform: translateY(-25px);
-	padding-left: 10px;
+.nav-li {
+	width: 20%;
+	border-bottom: 5px solid #cdecfe;
+	color:  #48bbfc;
+	font-size: calc(16px + .5vw + .25vh);
 	font-family: 'Pathway Gothic One', sans-serif;
-	/*font-size: 1.8em;*/
 	white-space: nowrap;
-	font-size: calc(16px + 0.75vw + 0.5vh);
+	min-height: 55px;
 }
 
-#home-landing {
-	height: 55px;
-	top: 0;
+.nav-a:focus, .nav-a:hover {
+	background-color: transparent !important;
+	color: #48bbfc;
+	border: 1px solid transparent;
+	border-color: transparent !important;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+	background-color: transparent !important;
+	color: #48bbfc !important;
+	border-right: none !important;
+	border-left: none !important;
+	border-top: none !important;
+}
+
+.nav-tabs>li.active {
+	margin-top: 1px;
 }
 
 /* ----------- iPhone 5 and 5S ----------- */
@@ -44,20 +50,9 @@
 		  and (min-device-width: 320px)
 		  and (max-device-width: 568px)
 		  and (-webkit-min-device-pixel-ratio: 2) {
-				#home {
-					height: calc(100vh - 75px);
-					padding: 31vh 0;
-				}
-
-	 			.home-header {
-					font-size: calc(40px + 4vw + 4vh);
-				}
-
-				.home-description{
-					transform: translateY(-25px);
-					padding-left: 0px;
-					font-size: calc(16px + 0.7vw + .9vh);
-				}
+        #page-nav {
+          display: none
+        }
 		}
 
 	/* Portrait */
@@ -74,9 +69,7 @@
 		  and (max-device-width: 568px)
 		  and (-webkit-min-device-pixel-ratio: 2)
 		  and (orientation: landscape) {
-				#home {
-					padding: 10vh 0;
-				}
+
 		}
 
 /* ----------- iPhone 6 ----------- */
@@ -85,6 +78,9 @@
     @media only screen and (min-device-width: 375px)
       and (max-device-width: 667px)
       and (-webkit-min-device-pixel-ratio: 2) {
+        #page-nav {
+          display: none
+        }
     }
 
 		/* Portrait */

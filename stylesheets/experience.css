@@ -43,8 +43,78 @@
 	font-family: 'Khand', sans-serif;
   color: #888;
 	font-size: calc(18px + 0.3vw + 0.2vh);
-	line-height: calc(20px + 0.3vw + 0.2vh);
+	line-height: calc(24px + 0.3vw + 0.2vh);
   padding: 1% 10%;
-  transform: translatey(-10px);
   white-space: nowrap;
 }
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+	/* Portrait and Landscape */
+		@media only screen
+		  and (min-device-width: 320px)
+		  and (max-device-width: 568px)
+		  and (-webkit-min-device-pixel-ratio: 2) {
+        .experience-section {
+      	    width: 100%;
+      			margin: 3% 0;
+      		}
+
+        .experience-section-pic {
+          position: relative;
+          height: 80px;
+        }
+
+        .experience-section-title {
+          font-size: calc(20px + 0.75vw + 1vh);
+        }
+
+      	.experience-section-caption {
+      		padding: 1% 8%;
+          font-size: calc(18px + 0.3vw + .4vh);
+          line-height: calc(24px + 0.3vw + .4vh);
+      	}
+		}
+
+	/* Portrait */
+		@media only screen
+		  and (min-device-width: 320px)
+		  and (max-device-width: 568px)
+		  and (-webkit-min-device-pixel-ratio: 2)
+		  and (orientation: portrait) {
+		}
+
+	/* Landscape */
+		@media only screen
+		  and (min-device-width: 320px)
+		  and (max-device-width: 568px)
+		  and (-webkit-min-device-pixel-ratio: 2)
+		  and (orientation: landscape) {
+				.experience-section {
+    	    width: 100%;
+    			margin: 1% 0;
+    		}
+
+				.experience-section-caption {
+					margin: 0;
+					margin-bottom: 1%;
+					padding: 0;
+				}
+		}
+
+/* ----------- iPhone 6 ----------- */
+
+  /* Portrait and Landscape */
+    @media only screen and (min-device-width: 375px)
+      and (max-device-width: 667px)
+      and (-webkit-min-device-pixel-ratio: 2) {
+    }
+
+  /* Portrait */
+    @media only screen
+      and (min-device-width: 375px)
+      and (max-device-width: 667px)
+      and (-webkit-min-device-pixel-ratio: 2)
+      and (orientation: portrait) {
+
+    }

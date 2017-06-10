@@ -1,16 +1,10 @@
 /* ABOUT ME */
 
-#about-me {
-}
-
 .about-section {
   height: 100%;
   width: 28%;
   display: inline-block;
   vertical-align: top;
-}
-
-.about-section-pic-container {
 }
 
 .about-section-pic {
@@ -26,42 +20,84 @@
   font-family: 'Khand', sans-serif;
 }
 
-@media (max-width: 700px){
-	.about-section {
-	    width: 100%;
-			margin: 2% 0;
-		}
-
-  .about-section-pic {
-    position: relative;
-  	height: 100px;
-  }
-
-	.about-section-caption {
-		padding: 1% 25%;
-	}
-}
-
-@media only screen and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-  .about-section {
-	    width: 100%;
-			margin: 2% 0;
-		}
-
-  .about-section-pic {
-    position: relative;
-  	height: calc(150px + 2vw + 1vh);
-  }
-
-	.about-section-caption {
-		padding: 1% 8%;
-    font-size: calc(18px + 1vw + 0.75vh);
-	}
-}
-
-
 svg {
   fill: rgba(0,0,0,0.5);
 }
+
+/* ----------- Web ----------- */
+
+    @media (max-width: 700px){
+    	.about-section {
+    	    width: 100%;
+    			margin: 2% 0;
+    		}
+
+      .about-section-pic {
+        position: relative;
+      	height: 100px;
+      }
+
+    	.about-section-caption {
+    		padding: 1% 25%;
+    	}
+    }
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+	/* Portrait and Landscape */
+		@media only screen
+		  and (min-device-width: 320px)
+		  and (max-device-width: 568px)
+		  and (-webkit-min-device-pixel-ratio: 2) {
+        .about-section {
+      	    width: 100%;
+      			margin: 3% 0;
+      		}
+
+        .about-section-pic {
+          position: relative;
+        	height: 80px;
+        }
+
+      	.about-section-caption {
+      		padding: 1% 8%;
+          font-size: calc(18px + 0.3vw + .4vh);
+          line-height: calc(24px + 0.3vw + .4vh);
+      	}
+		}
+
+	/* Portrait */
+		@media only screen
+		  and (min-device-width: 320px)
+		  and (max-device-width: 568px)
+		  and (-webkit-min-device-pixel-ratio: 2)
+		  and (orientation: portrait) {
+		}
+
+	/* Landscape */
+		@media only screen
+		  and (min-device-width: 320px)
+		  and (max-device-width: 568px)
+		  and (-webkit-min-device-pixel-ratio: 2)
+		  and (orientation: landscape) {
+        .about-section {
+      			margin: 1% 0;
+      		}
+		}
+
+/* ----------- iPhone 6 ----------- */
+
+  /* Portrait and Landscape */
+    @media only screen and (min-device-width: 375px)
+      and (max-device-width: 667px)
+      and (-webkit-min-device-pixel-ratio: 2) {
+    }
+
+  /* Portrait */
+    @media only screen
+      and (min-device-width: 375px)
+      and (max-device-width: 667px)
+      and (-webkit-min-device-pixel-ratio: 2)
+      and (orientation: portrait) {
+
+    }
