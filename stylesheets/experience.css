@@ -15,7 +15,7 @@
 	width: 33%;
 }
 
-@media only screen and (max-width: 100px) {
+@media only screen and (max-width: 900px) {
 	.experience-section {
 		width: 100%;
 		margin: 15px 0;
