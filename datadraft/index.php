@@ -6,20 +6,20 @@
 		<title>Joann Lin</title>
 
 			<!-- Icon -->
-		<link rel="apple-touch-icon" sizes="57x57" href="img/icon/apple-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="img/icon/apple-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="img/icon/apple-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="img/icon/apple-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="img/icon/apple-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="img/icon/apple-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="img/icon/apple-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="img/icon/apple-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-icon-180x180.png">
-		<link rel="icon" type="image/png" sizes="192x192"  href="img/icon/android-icon-192x192.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="96x96" href="img/icon/favicon-96x96.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
-		<link rel="manifest" href="img/icon/manifest.json">
+		<link rel="apple-touch-icon" sizes="57x57" href="../img/icon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="../img/icon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="../img/icon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="../img/icon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="../img/icon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="../img/icon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="../img/icon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="../img/icon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="../img/icon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="../img/icon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../img/icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../img/icon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../img/icon/favicon-16x16.png">
+		<link rel="manifest" href="../img/icon/manifest.json">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="img/icon/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
@@ -52,13 +52,30 @@
 
 	<body data-spy="scroll"
 				data-target="#page-nav">
-		<nav id="page-nav" role="navigation">
+				<?php
+				    // load up your config file
+				    require_once("/path/to/resources/config.php");
+
+				    require_once(TEMPLATES_PATH . "/header.php");
+				?>
+				<div id="container">
+				    <div id="content">
+				        <!-- content -->
+				    </div>
+				    <?php
+				        require_once(TEMPLATES_PATH . "/rightPanel.php");
+				    ?>
+				</div>
+				<?php
+				    require_once(TEMPLATES_PATH . "/footer.php");
+				?>
+		<!-- <nav id="page-nav" role="navigation">
 			<ul class="nav nav-tabs">
 				<li class="nav-li"><a class="nav-a" href="#home-landing">HOME</a></li>
 				<li class="nav-li"><a class="nav-a" href="#about-me-landing">WHO WE ARE</a></li>
 				<li class="nav-li"><a class="nav-a" href="#projects-landing">GET IN TOUCH</a></li>
 			</ul>
-		</nav>
+		</nav> -->
 		<div id="content">
 			Hello world
 			<!-- <div id="home-landing" class="transition"></div>
@@ -72,6 +89,6 @@
 			<div id="connect-landing" class="transition"></div>
 			<section id="connect" class="info-section-container"></section> -->
 		</div>
-		<script type="text/javascript" src="../js/index.js"></script>
+		<!-- <script type="text/javascript" src="../js/index.js"></script> -->
 	</body>
 </html>
