@@ -1,5 +1,5 @@
 <div id="header">
-    <div class="logo">
+    <div class="website-logo">
       <span class="website-title">Data Draft</span>
     </div>
     <ul class="nav global">

@@ -28,16 +28,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Internal Stylesheets -->
-<link href="./css/navigation.css" rel="stylesheet" type="text/css">
-<!--
-<link href="./stylesheets/nav.css" rel="stylesheet" type="text/css">
-<link href="./stylesheets/main.css" rel="stylesheet" type="text/css">
-<link href="./stylesheets/home.css" rel="stylesheet" type="text/css">
-<link href="./stylesheets/about-me.css" rel="stylesheet" type="text/css">
-<link href="./stylesheets/projects.css" rel="stylesheet" type="text/css">
-<link href="./stylesheets/experience.css" rel="stylesheet" type="text/css">
-<link href="./stylesheets/connect.css" rel="stylesheet" type="text/css">
--->
+<link href="./css/main.css" rel="stylesheet" type="text/css">
 
 <!-- jQuery Related -->
 <script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>

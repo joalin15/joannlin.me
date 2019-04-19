@@ -1,4 +1,11 @@
-.logo {
+/* GENERAL WEBSITE */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+/* NAVIGATION */
+.website-logo {
   vertical-align: middle;
 }
 
