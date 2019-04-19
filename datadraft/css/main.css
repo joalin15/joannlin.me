@@ -244,8 +244,18 @@ label {
 }
 
 @media only screen and (max-width: 700px) {
+  #home-banner .container {
+    padding-top: 50px;
+  }
+
   #blog-container, #side-bar-container {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #home-banner .container {
+    padding-top: 30px;
   }
 }
 
