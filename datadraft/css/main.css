@@ -130,6 +130,7 @@ label {
 
 #home-content {
   font-size: 16px;
+  margin-bottom: 100px;
 }
 
 #blog-container {
@@ -211,7 +212,7 @@ label {
 
 #side-bar-container .rankings {
   padding: 5px 20px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 #side-bar-container .rankings-title {
@@ -255,26 +256,30 @@ label {
   margin: 30px auto;
 }
 
-.person-section-container {
+#team-content {
+  margin-bottom: 100px;
+}
+
+#team-content .person-section-container {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.person-section {
+#team-content .person-section {
   text-align: center;
   padding: 50px 0;
   display: inline-block;
   width: 49%;
 }
 
-.person-section img {
+#team-content .person-section img {
   height: 250px;
   width: 200px;
   object-fit: cover;
   object-position: top;
 }
 
-.person-section .name {
+#team-content .person-section .name {
   padding: 20px 0 10px 0;
   font-weight: 600;
   text-transform: uppercase;
@@ -282,7 +287,7 @@ label {
 }
 
 @media only screen and (max-width: 700px) {
-  .person-section {
+  #team-content .person-section {
     /* text-align: center;
     padding: 50px 0;
     display: inline-block; */
@@ -316,6 +321,7 @@ label {
 
 #contact-content {
   padding: 0 10%;
+  margin-bottom: 100px;
 }
 
 #contact-content table {
@@ -331,4 +337,9 @@ label {
 #contact-content textarea {
   border: 2px solid rgb(238, 238, 238);
   resize: none;
+}
+
+#contact-content .submit-button {
+  background: white;
+  border: 2px solid rgb(238, 238, 238);
 }
