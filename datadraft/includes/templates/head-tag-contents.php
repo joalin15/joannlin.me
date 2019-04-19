@@ -26,11 +26,11 @@
 <link href="https://fonts.googleapis.com/css?family=Khand:500|Ropa+Sans" rel="stylesheet">
 
 <!-- External Stylesheets -->
-<link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Internal Stylesheets -->
-<link href="/css/navigation.css" rel="stylesheet" type="text/css">
+<link href="./css/navigation.css" rel="stylesheet" type="text/css">
 <!--
 <link href="./stylesheets/nav.css" rel="stylesheet" type="text/css">
 <link href="./stylesheets/main.css" rel="stylesheet" type="text/css">
