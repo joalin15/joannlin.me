@@ -21,9 +21,7 @@
 <meta name="theme-color" content="#ffffff">
 
 <!-- Google Fonts -->
-<link href='https://fonts.googleapis.com/css?family=Teko:400,600' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Khand:500|Ropa+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 <!-- External Stylesheets -->
 <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
