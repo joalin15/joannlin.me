@@ -21,7 +21,7 @@
 <meta name="theme-color" content="#ffffff">
 
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
 
 <!-- External Stylesheets -->
 <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
