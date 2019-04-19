@@ -1,6 +1,6 @@
 <div id="header">
     <div id="website-logo">
-      <span class="website-title">Data Draft</span>
+      <span class="website-title"><a href="index.php">Data Draft</a></span>
     </div>
     <div id="website-nav">
       <ul class="list">
