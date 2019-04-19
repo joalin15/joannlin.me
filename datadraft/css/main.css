@@ -200,6 +200,8 @@ label {
   text-transform: uppercase;
   font-size: 12px;
   transition: background 1s;
+  max-width: 200px;
+  margin: 0 auto;
 }
 
 #side-bar-container .premium-button:hover {
@@ -220,6 +222,12 @@ label {
 #side-bar-container .ranking {
   padding: 10px 20px;
   font-size: 16px;
+}
+
+@media only screen and (max-width: 700px) {
+  #blog-container, #side-container {
+    width: 100%;
+  }
 }
 
 /* TEAM */
