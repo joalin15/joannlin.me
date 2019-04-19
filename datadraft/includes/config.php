@@ -13,20 +13,16 @@ $config = array(
         "baseUrl" => "http://joannlin.me/datadraft"
     ),
     "paths" => array(
-        "resources" => "/resources",
-        "images" => array(
-            "content" => $_SERVER["DOCUMENT_ROOT"] . "/images/content",
-            "layout" => $_SERVER["DOCUMENT_ROOT"] . "/images/layout"
-        )
+        "images" => "/img"
     )
 );
 
 switch ($_SERVER["SCRIPT_NAME"]) {
-		case "/php-template/team.php":
+		case "/team.php":
     $CURRENT_PAGE = "Team";
     $PAGE_TITLE = "Who We Are";
 			break;
-		case "/php-template/contact.php":
+		case "/contact.php":
 			$CURRENT_PAGE = "Contact";
 			$PAGE_TITLE = "Contact Us";
 			break;

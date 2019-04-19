@@ -1,0 +1,17 @@
+.logo {
+  vertical-align: middle;
+}
+
+.website-title {
+  max-width: 400px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  -webkit-transition: font-size 260ms ease;
+  -moz-transition: font-size 260ms ease;
+  -ms-transition: font-size 260ms ease;
+  transition: font-size 260ms ease;
+}
