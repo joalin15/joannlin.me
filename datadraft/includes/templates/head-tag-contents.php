@@ -1,0 +1,46 @@
+<!-- Title -->
+<title><?php print $PAGE_TITLE;?></title>
+
+<!-- Icon -->
+<link rel="apple-touch-icon" sizes="57x57" href="../img/icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="../img/icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="../img/icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="../img/icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="../img/icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="../img/icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="../img/icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="../img/icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../img/icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="../img/icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../img/icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="../img/icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../img/icon/favicon-16x16.png">
+<link rel="manifest" href="../img/icon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="img/icon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Google Fonts -->
+<link href='https://fonts.googleapis.com/css?family=Teko:400,600' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Khand:500|Ropa+Sans" rel="stylesheet">
+
+<!-- External Stylesheets -->
+<link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Internal Stylesheets -->
+<!-- <link href="./stylesheets/nav.css" rel="stylesheet" type="text/css">
+<link href="./stylesheets/main.css" rel="stylesheet" type="text/css">
+<link href="./stylesheets/home.css" rel="stylesheet" type="text/css">
+<link href="./stylesheets/about-me.css" rel="stylesheet" type="text/css">
+<link href="./stylesheets/projects.css" rel="stylesheet" type="text/css">
+<link href="./stylesheets/experience.css" rel="stylesheet" type="text/css">
+<link href="./stylesheets/connect.css" rel="stylesheet" type="text/css"> -->
+
+<!-- jQuery Related -->
+<script type="text/javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">

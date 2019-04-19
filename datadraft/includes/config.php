@@ -21,18 +21,19 @@ $config = array(
     )
 );
 
-/*
-    I will usually place the following in a bootstrap file or some type of environment
-    setup file (code that is run at the start of every page request), but they work
-    just as well in your config file if it's in php (some alternatives to php are xml or ini files).
-*/
-
-/*
-    Creating constants for heavily used paths makes things a lot easier.
-    ex. require_once(LIBRARY_PATH . "Paginator.php")
-*/
-defined("LIBRARY_PATH")
-    or define("LIBRARY_PATH", realpath(dirname(__FILE__) . '/library'));
+switch ($_SERVER["SCRIPT_NAME"]) {
+		case "/php-template/team.php":
+    $CURRENT_PAGE = "Team";
+    $PAGE_TITLE = "Who We Are";
+			break;
+		case "/php-template/contact.php":
+			$CURRENT_PAGE = "Contact";
+			$PAGE_TITLE = "Contact Us";
+			break;
+		default:
+			$CURRENT_PAGE = "Home";
+			$PAGE_TITLE = "Data Draft";
+	}
 
 defined("TEMPLATES_PATH")
     or define("TEMPLATES_PATH", realpath(dirname(__FILE__) . '/templates'));
