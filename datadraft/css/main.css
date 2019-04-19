@@ -51,6 +51,14 @@ label {
   vertical-align: top;
 }
 
+#website-nav .horizontal {
+  display: inline-block;
+}
+
+#website-nav .vertical {
+  display: none;
+}
+
 #website-nav .list {
   list-style-type: none;
   margin: 0;
@@ -101,6 +109,14 @@ label {
 
   #website-nav .list-item {
     float: none;
+  }
+
+  #website-nav .horizontal {
+    display: none;
+  }
+
+  #website-nav .vertical {
+    display: block;
   }
 }
 
