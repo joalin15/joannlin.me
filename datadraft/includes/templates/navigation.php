@@ -1,10 +1,12 @@
 <div id="header">
-    <div class="website-logo">
+    <div id="website-logo">
       <span class="website-title">Data Draft</span>
     </div>
-    <ul class="nav global">
-        <li><a class="nav-link <?php if ($CURRENT_PAGE == "Index") {?>active<?php }?>" href="index.php">Home</a></li>
-        <li><a class="nav-link <?php if ($CURRENT_PAGE == "Index") {?>active<?php }?>" href="team.php">Who We Are</a></li>
-        <li><a class="nav-link <?php if ($CURRENT_PAGE == "Index") {?>active<?php }?>" href="contact.php">Get In Touch</a></li>
-    </ul>
+    <div id="website-nav">
+      <ul class="list">
+        <li class="list-item"><a class="nav-link <?php if ($CURRENT_PAGE == "Contact") {?>active<?php }?>" href="contact.php">Contact Us</a></li>
+        <li class="list-item"><a class="nav-link <?php if ($CURRENT_PAGE == "Team") {?>active<?php }?>" href="team.php">Who We Are</a></li>
+        <li class="list-item"><a class="nav-link <?php if ($CURRENT_PAGE == "Home") {?>active<?php }?>" href="index.php">Home</a></li>
+      </ul>
+    </div>
 </div>

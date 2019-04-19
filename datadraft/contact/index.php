@@ -1,4 +1,4 @@
-<?php include("includes/config.php");?>
+<?php include("./includes/config.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +7,7 @@
 <body>
 
 	<?php include(TEMPLATES_PATH . "/navigation.php");?>
-
+	<?php echo(TEMPLATES_PATH)?>
 	<div class="container" id="main-content">
 		<div id="contact-banner">
 			<div class="container">

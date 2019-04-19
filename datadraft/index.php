@@ -1,4 +1,5 @@
 <?php include("includes/config.php");?>
+<?php include("includes/data.php");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,19 +8,44 @@
 <body>
 
 	<?php include(TEMPLATES_PATH . "/navigation.php");?>
-	<div class="container" id="main-content">
-		<h2>Welcome to my website!</h2>
-		<p>Some content goes here! Let's go with the classic "lorem ipsum."</p>
-
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
+	<div id="main-content">
+		<div id="home-banner">
+			<div class="container">
+				<div class="text">The Ultimate Fantasy Insider:</div>
+				<div class="text">Where Data Science and Fantasy Sports Intersect</div>
+			</div>
+		</div>
+		<div id="home-content" class="container">
+			<div id="blog-container">
+				<?php
+					for ($i = 0; $i < sizeof($blogArr); $i++) {
+							echo "<div class=\"blog\">";
+							echo "<div class=\"blog-title\">" . $blogArr[$i]['title'] . "</div>";
+							echo "<div class=\"blog-date\">" . $blogArr[$i]['date'] . "</div>";
+							echo "<div class=\"blog-text\">" . $blogArr[$i]['text'] . "</div>";
+							echo "</div>";
+					}
+				?>
+			</div>
+			<div id="side-bar-container">
+				<div class="about">
+					<div class="about-title">Data Draft</div>
+					<div class="about-description">We provide fantasy teams with better insight and informed decision making through the combination of data science and our fantasy expertise</div>
+				</div>
+				<div class="premium">
+					<div class="premium-button"><a href="" onclick="return false;">Data Draft Premium</a></div>
+				</div>
+				<div class="rankings">
+					<div class="rankings-title">Player Rankings:</div>
+					<?php
+						for ($i = 0; $i < sizeof($playerArr); $i++) {
+						    echo "<div class=\"ranking\">" . ($i + 1) . ". " . $playerArr[$i] . "</div>";
+						}
+					?>
+				</div>
+			</div>
+		</div>
 	</div>
-
-	<?php include(TEMPLATES_PATH . "/footer.php");?>
 
 </body>
 </html>
