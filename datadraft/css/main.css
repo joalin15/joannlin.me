@@ -171,11 +171,12 @@ label {
   float: right;
   width: 29%;
   min-height: 100px;
+  margin: 30px 0;
 }
 
 #side-bar-container .about {
-  margin-top: 30px;
   padding: 5px 20px;
+  margin-bottom: 20px;
 }
 
 #side-bar-container .about-title {
@@ -189,9 +190,9 @@ label {
 }
 
 #side-bar-container .premium {
-  margin-top: 20px;
   padding: 5px 20px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 #side-bar-container .premium-button {
@@ -209,8 +210,8 @@ label {
 }
 
 #side-bar-container .rankings {
-  margin-top: 20px;
   padding: 5px 20px;
+  margin-bottom: 50px;
 }
 
 #side-bar-container .rankings-title {
