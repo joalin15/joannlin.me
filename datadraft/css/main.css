@@ -411,7 +411,7 @@ label {
 }
 
 .pricing-table-container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -419,6 +419,10 @@ label {
 .pricing-table-container th,
 .pricing-table-container td {
   border: 1px solid black;
+}
+
+.pricing-table-container table {
+  width: 100%;
 }
 
 .pricing-table-container td {
@@ -432,4 +436,10 @@ label {
 
 .pricing-table-container img {
   height: 50px;
+}
+
+@media only screen and (max-width: 700px) {
+  .pricing-table-container td {
+    padding: 5px;
+  }
 }
