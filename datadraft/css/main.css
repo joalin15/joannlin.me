@@ -197,7 +197,6 @@ label {
 #blog-container .blog-media {
   position: relative;
   width: 60%;
-  min-width: 300px;
   max-width: 600px;
 }
 
@@ -444,5 +443,11 @@ label {
   }
   .pricing-table-container ul {
     padding-inline-start: 25px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .pricing-table-container td {
+    padding: 2px;
   }
 }
