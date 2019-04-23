@@ -23,6 +23,12 @@
 							echo "<div class=\"blog-title\">" . $blogArr[$i]['title'] . "</div>";
 							echo "<div class=\"blog-date\">" . $blogArr[$i]['date'] . "</div>";
 							echo "<div class=\"blog-text\">" . $blogArr[$i]['text'] . "</div>";
+							if ($blogArr[$i]['photo'] != "") {
+								echo "<div class=\"blog-media-container\">" . $blogArr[$i]['photo'] . "</div>";
+							}
+							if ($blogArr[$i]['video'] != "") {
+								echo "<div class=\"blog-media-container\">" . $blogArr[$i]['video'] . "</div>";
+							}
 							echo "</div>";
 					}
 				?>
@@ -33,7 +39,7 @@
 					<div class="about-description">We provide fantasy teams with better insight and informed decision making through the combination of data science and our fantasy expertise</div>
 				</div>
 				<div class="premium">
-					<div class="premium-button"><a href="" onclick="return false;">Data Draft Premium</a></div>
+					<div class="premium-button"><a href="premium.php">Data Draft Premium</a></div>
 				</div>
 				<div class="rankings">
 					<div class="rankings-title">Player Rankings:</div>

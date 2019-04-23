@@ -95,9 +95,6 @@ label {
     width: calc(100% - 240px);
     vertical-align: top;
   }
-  #website-nav .list-item {
-    padding: 12px 0px;
-  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -121,6 +118,10 @@ label {
 
   #website-nav .vertical {
     display: block;
+  }
+
+  #website-nav .list-item {
+    padding: 12px 0px;
   }
 }
 
@@ -185,6 +186,19 @@ label {
 #blog-container a {
   text-decoration: underline;
   font-weight: 500;
+}
+
+#blog-container .blog-media-container {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#blog-container .blog-media {
+  position: relative;
+  width: 60%;
+  min-width: 300px;
+  max-width: 600px;
 }
 
 #side-bar-container {
@@ -370,4 +384,52 @@ label {
 #contact-content .submit-button {
   background: white;
   border: 2px solid rgb(238, 238, 238);
+}
+
+/** PREMIUM **/
+#premium-banner {
+  margin-top: 20px;
+  background: white;
+  color: black;
+  height: 100px;
+}
+
+#premium-banner .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#premium-banner .text {
+  color: inherit;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  margin: 30px auto;
+}
+
+.pricing-table-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.pricing-table-container table,
+.pricing-table-container th,
+.pricing-table-container td {
+  border: 1px solid black;
+}
+
+.pricing-table-container td {
+  padding: 10px;
+  text-align: center;
+}
+
+.pricing-table-container .header {
+  font-weight: 600;
+}
+
+.pricing-table-container img {
+  height: 50px;
 }

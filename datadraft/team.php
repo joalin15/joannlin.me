@@ -11,7 +11,7 @@
 	<div id="main-content">
 		<div id="team-banner">
 			<div class="container">
-				<div class="text">Who We Are</div>
+				<h2 class="text">Who We Are</h2>
 			</div>
 		</div>
 		<div id="team-content" class="container">

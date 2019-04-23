@@ -11,7 +11,7 @@
 	<div class="container" id="main-content">
 		<div id="contact-banner">
 			<div class="container">
-				<div class="text">Contact Us</div>
+				<h2 class="text">Contact Us</h2>
 			</div>
 		</div>
 		<div id="contact-content" class="container">

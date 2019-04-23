@@ -19,7 +19,11 @@ switch ($_SERVER["SCRIPT_NAME"]) {
 			$CURRENT_PAGE = "Contact";
 			$PAGE_TITLE = "Contact Us";
 			break;
-		default:
+    case "/datadraft/premium.php":
+			$CURRENT_PAGE = "Premium";
+			$PAGE_TITLE = "Premium Pricing";
+			break;
+    default:
 			$CURRENT_PAGE = "Home";
 			$PAGE_TITLE = "Data Draft";
 };
