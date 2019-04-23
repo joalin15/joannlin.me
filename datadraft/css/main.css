@@ -442,4 +442,7 @@ label {
   .pricing-table-container td {
     padding: 5px;
   }
+  .pricing-table-container ul {
+    padding-inline-start: 25px;
+  }
 }
