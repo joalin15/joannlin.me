@@ -273,6 +273,10 @@ label {
   #home-banner .container {
     padding-top: 25px;
   }
+
+  #blog-container iframe {
+    height: auto;
+  }
 }
 
 /* TEAM */
